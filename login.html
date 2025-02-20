@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/splide.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/splide.min.js"></script>
+</head>
+
+<body class="bg-grey">
+    <div class="container-fluid">
+        <header class="row">
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="container-lg">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+                    <form class="w-50 d-flex" id="search" role="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="m-2" width="20" height="20" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                        <input class="form-control border-0 bg-transparent" type="search" placeholder="Search"
+                            aria-label="Search">
+                    </form>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item d-flex rounded-1" id="loginBtn">
+                                <a class="nav-link" aria-current="page" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <g clip-path>
+                                            <path
+                                                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                stroke="black" stroke-width="1.4" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M12 15C14.0711 15 15.75 13.3211 15.75 11.25C15.75 9.17893 14.0711 7.5 12 7.5C9.92893 7.5 8.25 9.17893 8.25 11.25C8.25 13.3211 9.92893 15 12 15Z"
+                                                stroke="black" stroke-width="1.4" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M5.98047 18.6904C6.54476 17.5789 7.40581 16.6454 8.46816 15.9933C9.53052 15.3413 10.7527 14.9961 11.9992 14.9961C13.2457 14.9961 14.4679 15.3413 15.5303 15.9933C16.5926 16.6454 17.4537 17.5789 18.018 18.6904"
+                                                stroke="black" stroke-width="1.4" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath>
+                                                <rect width="24" height="24" fill="none" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    Login
+                                    <svg id="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-start w-25">
+                                    <li>
+                                        <a href="#" class="dropdown-item d-flex justify-content-between">
+                                            <span>New Customer?</span>
+                                            <span class="text-primary">Sign Up</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_11829_87876)">
+                                                    <path
+                                                        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                        stroke="black" stroke-width="1.4" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M12 15C14.0711 15 15.75 13.3211 15.75 11.25C15.75 9.17893 14.0711 7.5 12 7.5C9.92893 7.5 8.25 9.17893 8.25 11.25C8.25 13.3211 9.92893 15 12 15Z"
+                                                        stroke="black" stroke-width="1.4" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M5.98047 18.6904C6.54476 17.5789 7.40581 16.6454 8.46816 15.9933C9.53052 15.3413 10.7527 14.9961 11.9992 14.9961C13.2457 14.9961 14.4679 15.3413 15.5303 15.9933C16.5926 16.6454 17.4537 17.5789 18.018 18.6904"
+                                                        stroke="black" stroke-width="1.4" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_11829_87876">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            My Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M16.9116 6.41093C16.9116 6.41093 19.4188 7.65737 20.6557 8.1864C21.8592 8.69995 21.9955 10.6251 20.6711 11.2754C19.3468 11.9257 18.9817 12.0315 18.9817 12.0315C18.9817 12.0315 19.19 11.4922 19.1617 10.9709C19.0768 10.0419 16.3407 9.28834 14.5278 8.84189C14.5278 8.84189 13.1366 4.45998 12.5066 3.23934C11.874 2.01096 10.5908 1.5 10.5908 1.5L13.6226 1.54128C13.6226 1.54128 14.6667 1.48968 15.1295 2.61483C15.5898 3.73999 16.9116 6.41093 16.9116 6.41093Z"
+                                                    fill="#212121" />
+                                                <path
+                                                    d="M17.6095 16.891C17.6095 16.891 16.3804 19.3788 15.8403 20.651C15.326 21.8588 13.3691 21.9955 12.7237 20.6665C12.0757 19.3375 12.0088 19.1001 12.0088 19.1001C12.0088 19.1001 12.3997 19.1775 13.022 19.1491C13.9477 19.0639 14.7423 16.3181 15.1872 14.4988C15.1872 14.4988 19.5536 13.1001 20.7699 12.4704C21.994 11.8356 22.5006 10.5479 22.5006 10.5479L22.4594 14.0446C22.4594 14.0446 22.5108 14.6407 21.3897 15.1053C20.271 15.5672 17.6095 16.891 17.6095 16.891Z"
+                                                    fill="#212121" />
+                                                <path
+                                                    d="M7.08599 17.5788C7.08599 17.5788 4.59163 16.3401 3.3393 15.8033C2.13584 15.2898 1.99955 13.3621 3.32387 12.7143C4.6482 12.064 5.18051 11.9453 5.18051 11.9453C5.18051 11.9453 4.83593 12.4976 4.92079 13.1195C5.00822 14.0511 7.65687 14.7014 9.46464 15.1479C9.46464 15.1479 10.9098 19.504 11.4858 20.7504C12.1904 22.2678 13.3579 22.5001 13.3579 22.5001L9.9198 22.4485C9.9198 22.4485 9.32577 22.5001 8.8629 21.3775C8.40517 20.2498 7.08599 17.5788 7.08599 17.5788Z"
+                                                    fill="#212121" />
+                                                <path
+                                                    d="M6.41672 7.09875C6.41672 7.09875 7.65105 4.59812 8.18592 3.33877C8.69765 2.13103 10.616 1.99684 11.264 3.32329C11.912 4.65231 11.9738 4.89231 11.9738 4.89231C11.9738 4.89231 11.4852 4.90006 10.9683 4.92844C10.04 5.01619 9.28396 7.67423 8.84166 9.49099C8.84166 9.49099 4.49067 10.9181 3.25892 11.5194C1.56429 12.3452 1.5 13.4032 1.5 13.4032L1.56944 9.94775C1.56944 9.94775 1.518 9.35163 2.6366 8.88712C3.75521 8.42261 6.41672 7.09875 6.41672 7.09875Z"
+                                                    fill="#212121" />
+                                            </svg>
+                                            Flipkart Plus Zone
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M21 16.621V7.37727C20.9993 7.24374 20.9634 7.11277 20.8959 6.99755C20.8284 6.88234 20.7317 6.78695 20.6156 6.72102L12.3656 2.08039C12.2545 2.01621 12.1284 1.98242 12 1.98242C11.8716 1.98242 11.7455 2.01621 11.6344 2.08039L3.38437 6.72102C3.26827 6.78695 3.1716 6.88234 3.10411 6.99755C3.03663 7.11277 3.00072 7.24374 3 7.37727V16.621C3.00072 16.7545 3.03663 16.8855 3.10411 17.0007C3.1716 17.1159 3.26827 17.2113 3.38437 17.2773L11.6344 21.9179C11.7455 21.9821 11.8716 22.0159 12 22.0159C12.1284 22.0159 12.2545 21.9821 12.3656 21.9179L20.6156 17.2773C20.7317 17.2113 20.8284 17.1159 20.8959 17.0007C20.9634 16.8855 20.9993 16.7545 21 16.621V16.621Z"
+                                                    stroke="#212121" stroke-width="1.4" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M16.5938 14.2959V9.4209L7.5 4.40527" stroke="#212121"
+                                                    stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M20.8973 6.99316L12.0848 11.9994L3.10352 6.99316"
+                                                    stroke="#212121" stroke-width="1.4" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M12.0844 11.999L12 22.0115" stroke="#212121" stroke-width="1.4"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                            Orders
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M12 20.249C12 20.249 2.625 14.999 2.625 8.62403C2.625 7.49705 3.01546 6.40488 3.72996 5.53334C4.44445 4.66179 5.43884 4.06472 6.54393 3.8437C7.64903 3.62268 8.79657 3.79137 9.79131 4.32106C10.7861 4.85076 11.5665 5.70874 12 6.74903V6.74903C12.4335 5.70874 13.2139 4.85076 14.2087 4.32106C15.2034 3.79137 16.351 3.62268 17.4561 3.8437C18.5612 4.06472 19.5555 4.66179 20.27 5.53334C20.9845 6.40488 21.375 7.49705 21.375 8.62403C21.375 14.999 12 20.249 12 20.249Z"
+                                                    stroke="#212121" stroke-width="1.4" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            Wishlist
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M20.25 7.49902H3.75C3.33579 7.49902 3 7.83481 3 8.24902V11.249C3 11.6632 3.33579 11.999 3.75 11.999H20.25C20.6642 11.999 21 11.6632 21 11.249V8.24902C21 7.83481 20.6642 7.49902 20.25 7.49902Z"
+                                                    stroke="#212121" stroke-width="1.2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M19.5 11.999V18.749C19.5 18.9479 19.421 19.1387 19.2803 19.2794C19.1397 19.42 18.9489 19.499 18.75 19.499H5.25C5.05109 19.499 4.86032 19.42 4.71967 19.2794C4.57902 19.1387 4.5 18.9479 4.5 18.749V11.999"
+                                                    stroke="#212121" stroke-width="1.2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M12 7.49902V19.499" stroke="#212121" stroke-width="1.2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M16.2469 6.43945C15.1781 7.49882 12 7.49882 12 7.49882C12 7.49882 12 4.3207 13.0594 3.25195C13.4821 2.82926 14.0554 2.5918 14.6531 2.5918C15.2509 2.5918 15.8242 2.82926 16.2469 3.25195C16.6696 3.67464 16.907 4.24793 16.907 4.8457C16.907 5.44347 16.6696 6.01676 16.2469 6.43945V6.43945Z"
+                                                    stroke="#212121" stroke-width="1.2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M7.75341 6.43945C8.82216 7.49882 12.0003 7.49882 12.0003 7.49882C12.0003 7.49882 12.0003 4.3207 10.9409 3.25195C10.5182 2.82926 9.94494 2.5918 9.34716 2.5918C8.74939 2.5918 8.1761 2.82926 7.75341 3.25195C7.33073 3.67464 7.09326 4.24793 7.09326 4.8457C7.09326 5.44347 7.33073 6.01676 7.75341 6.43945Z"
+                                                    stroke="#212121" stroke-width="1.2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            Rewards
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M20.3125 4.99902H2.3125C1.9644 4.99902 1.63056 5.1373 1.38442 5.38345C1.13828 5.62959 1 5.96343 1 6.31152V18.3115C1 18.6596 1.13828 18.9935 1.38442 19.2396C1.63056 19.4857 1.9644 19.624 2.3125 19.624H20.3125C20.6606 19.624 20.9944 19.4857 21.2406 19.2396C21.4867 18.9935 21.625 18.6596 21.625 18.3115V6.31152C21.625 5.96343 21.4867 5.62959 21.2406 5.38345C20.9944 5.1373 20.6606 4.99902 20.3125 4.99902ZM2.3125 6.12402H20.3125C20.3622 6.12402 20.4099 6.14378 20.4451 6.17894C20.4802 6.2141 20.5 6.2618 20.5 6.31152V8.31152H2.125V6.31152C2.125 6.2618 2.14475 6.2141 2.17992 6.17894C2.21508 6.14378 2.26277 6.12402 2.3125 6.12402ZM20.3125 18.499H2.3125C2.26277 18.499 2.21508 18.4793 2.17992 18.4441C2.14475 18.4089 2.125 18.3613 2.125 18.3115V9.43652H20.5V18.3115C20.5 18.3613 20.4802 18.4089 20.4451 18.4441C20.4099 18.4793 20.3622 18.499 20.3125 18.499Z"
+                                                    fill="#212121" />
+                                                <path d="M4.00391 10.8779H8.42225" stroke="#212121"
+                                                    stroke-linecap="round" />
+                                                <path d="M4.00391 12.6709H8.42225" stroke="#212121"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M4.00391 10.8774C4.95069 10.8561 7.15987 10.8774 7.15987 12.771C7.15987 14.6646 4.95069 14.6432 4.00391 14.6646"
+                                                    stroke="#212121" stroke-linecap="round" />
+                                                <path
+                                                    d="M7.15884 17.8924C7.37257 18.0672 7.68758 18.0357 7.86244 17.822C8.03731 17.6083 8.00581 17.2933 7.79208 17.1184L7.15884 17.8924ZM3.68729 15.052L7.15884 17.8924L7.79208 17.1184L4.32053 14.2781L3.68729 15.052Z"
+                                                    fill="#212121" />
+                                            </svg>
+                                            Gift Cards
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M17.25 17.25H6.54545L3.93015 2.86584C3.89873 2.69303 3.80766 2.53673 3.67281 2.42419C3.53796 2.31164 3.36789 2.25 3.19225 2.25H1.5"
+                                            stroke="#111112" stroke-width="1.4" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M7.5 21C8.53553 21 9.375 20.1605 9.375 19.125C9.375 18.0895 8.53553 17.25 7.5 17.25C6.46447 17.25 5.625 18.0895 5.625 19.125C5.625 20.1605 6.46447 21 7.5 21Z"
+                                            stroke="#111112" stroke-width="1.4" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M17.25 21C18.2855 21 19.125 20.1605 19.125 19.125C19.125 18.0895 18.2855 17.25 17.25 17.25C16.2145 17.25 15.375 18.0895 15.375 19.125C15.375 20.1605 16.2145 21 17.25 21Z"
+                                            stroke="#111112" stroke-width="1.4" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M5.86363 13.5H17.6345C17.9858 13.5 18.3259 13.3767 18.5956 13.1516C18.8653 12.9265 19.0475 12.6139 19.1103 12.2683L20.25 6H4.5"
+                                            stroke="#111112" stroke-width="1.4" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    Cart
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M4.49979 13.0547V19.2729C4.49979 19.4658 4.57881 19.6507 4.71947 19.7871C4.86012 19.9235 5.05088 20.0001 5.24979 20.0001H18.7498C18.9487 20.0001 19.1395 19.9235 19.2801 19.7871C19.4208 19.6507 19.4998 19.4658 19.4998 19.2729V13.0547"
+                                            stroke="#212121" stroke-width="1.4" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M5.0625 4H18.9375C19.1002 4.0013 19.2582 4.05324 19.3881 4.14817C19.5181 4.24309 19.6132 4.37599 19.6594 4.52727L21 9.09091H3L4.34062 4.52727C4.38682 4.37599 4.4819 4.24309 4.61187 4.14817C4.74183 4.05324 4.8998 4.0013 5.0625 4V4Z"
+                                            stroke="#212121" stroke-width="1.4" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M9 9.09082V10.5454C9 11.3169 8.68393 12.0568 8.12132 12.6024C7.55871 13.148 6.79565 13.4545 6 13.4545C5.20435 13.4545 4.44129 13.148 3.87868 12.6024C3.31607 12.0568 3 11.3169 3 10.5454V9.09082"
+                                            stroke="#212121" stroke-width="1.4" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M14.9999 9.09082V10.5454C14.9999 11.3169 14.6839 12.0568 14.1213 12.6024C13.5586 13.148 12.7956 13.4545 11.9999 13.4545C11.2043 13.4545 10.4412 13.148 9.87861 12.6024C9.316 12.0568 8.99993 11.3169 8.99993 10.5454V9.09082"
+                                            stroke="#212121" stroke-width="1.4" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M20.9999 9.09082V10.5454C20.9999 11.3169 20.6838 12.0568 20.1212 12.6024C19.5586 13.148 18.7955 13.4545 17.9999 13.4545C17.2042 13.4545 16.4412 13.148 15.8785 12.6024C15.3159 12.0568 14.9999 11.3169 14.9999 10.5454V9.09082"
+                                            stroke="#212121" stroke-width="1.4" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    Become a Seller</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                        <path
+                                            d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                                    </svg>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M5.26904 9.74897C5.2678 8.85947 5.44262 7.97853 5.78343 7.15692C6.12424 6.33531 6.6243 5.58927 7.25477 4.96182C7.88525 4.33437 8.63368 3.83791 9.45693 3.50106C10.2802 3.16421 11.1619 2.99363 12.0514 2.99915C15.763 3.02675 18.7317 6.11178 18.7317 9.8337V10.499C18.7317 13.8567 19.4342 15.8051 20.0529 16.87C20.1196 16.9838 20.1551 17.1132 20.1558 17.2451C20.1565 17.3769 20.1224 17.5066 20.0569 17.6211C19.9915 17.7356 19.8971 17.8309 19.7831 17.8972C19.6691 17.9635 19.5397 17.9986 19.4078 17.999H4.59222C4.46034 17.9986 4.33087 17.9635 4.21689 17.8972C4.1029 17.8308 4.00844 17.7356 3.94301 17.6211C3.87759 17.5065 3.84352 17.3768 3.84425 17.2449C3.84498 17.113 3.88048 16.9837 3.94716 16.8699C4.56622 15.8049 5.26904 13.8565 5.26904 10.499L5.26904 9.74897Z"
+                                                    stroke="#212121" stroke-width="1.4" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M9 17.999V18.749C9 19.5447 9.31607 20.3077 9.87868 20.8703C10.4413 21.433 11.2044 21.749 12 21.749C12.7956 21.749 13.5587 21.433 14.1213 20.8703C14.6839 20.3077 15 19.5447 15 18.749V17.999"
+                                                    stroke="#212121" stroke-width="1.4" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            Notification Preferences
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M21.1406 11.9993H18.1406C17.7428 11.9993 17.3613 12.1574 17.08 12.4387C16.7987 12.72 16.6406 13.1015 16.6406 13.4993V17.2493C16.6406 17.6472 16.7987 18.0287 17.08 18.31C17.3613 18.5913 17.7428 18.7493 18.1406 18.7493H19.6406C20.0384 18.7493 20.42 18.5913 20.7013 18.31C20.9826 18.0287 21.1406 17.6472 21.1406 17.2493V11.9993ZM21.1406 11.9993C21.1407 10.8111 20.9054 9.63462 20.4484 8.53777C19.9915 7.44093 19.3218 6.44543 18.4781 5.60871C17.6344 4.772 16.6334 4.11063 15.5328 3.66277C14.4322 3.21492 13.2538 2.98943 12.0656 2.99934C10.8782 2.99068 9.70083 3.21708 8.60132 3.66549C7.5018 4.11391 6.50189 4.77547 5.6592 5.61206C4.81651 6.44865 4.1477 7.44373 3.69131 8.53996C3.23492 9.63619 2.99997 10.8119 3 11.9993V17.2493C3 17.6472 3.15804 18.0287 3.43934 18.31C3.72064 18.5913 4.10218 18.7493 4.5 18.7493H6C6.39782 18.7493 6.77936 18.5913 7.06066 18.31C7.34196 18.0287 7.5 17.6472 7.5 17.2493V13.4993C7.5 13.1015 7.34196 12.72 7.06066 12.4387C6.77936 12.1574 6.39782 11.9993 6 11.9993H3"
+                                                    stroke="#212121" stroke-width="1.2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M21.1406 17.249V19.499C21.1406 20.2947 20.8246 21.0577 20.2619 21.6203C19.6993 22.183 18.9363 22.499 18.1406 22.499H12.75"
+                                                    stroke="#212121" stroke-width="1.2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            24X7 Customer Care
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M22.4999 5.24902V11.249C22.4999 11.4479 22.4209 11.6387 22.2803 11.7794C22.1396 11.92 21.9488 11.999 21.7499 11.999C21.551 11.999 21.3603 11.92 21.2196 11.7794C21.0789 11.6387 20.9999 11.4479 20.9999 11.249V7.05934L13.2806 14.7796C13.2109 14.8494 13.1282 14.9047 13.0371 14.9424C12.9461 14.9802 12.8485 14.9996 12.7499 14.9996C12.6514 14.9996 12.5538 14.9802 12.4627 14.9424C12.3717 14.9047 12.289 14.8494 12.2193 14.7796L8.99993 11.5593L2.78055 17.7796C2.63982 17.9204 2.44895 17.9994 2.24993 17.9994C2.05091 17.9994 1.86003 17.9204 1.7193 17.7796C1.57857 17.6389 1.49951 17.448 1.49951 17.249C1.49951 17.05 1.57857 16.8591 1.7193 16.7184L8.4693 9.9684C8.53896 9.89867 8.62167 9.84335 8.71272 9.8056C8.80377 9.76786 8.90137 9.74843 8.99993 9.74843C9.09849 9.74843 9.19609 9.76786 9.28713 9.8056C9.37818 9.84335 9.4609 9.89867 9.53055 9.9684L12.7499 13.1887L19.9396 5.99902H15.7499C15.551 5.99902 15.3603 5.92001 15.2196 5.77935C15.0789 5.6387 14.9999 5.44794 14.9999 5.24902C14.9999 5.05011 15.0789 4.85935 15.2196 4.71869C15.3603 4.57804 15.551 4.49902 15.7499 4.49902H21.7499C21.9488 4.49902 22.1396 4.57804 22.2803 4.71869C22.4209 4.85935 22.4999 5.05011 22.4999 5.24902Z"
+                                                    fill="#212121" />
+                                            </svg>
+                                            Advertise
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M21 14.249V19.499C21 19.8968 20.842 20.2784 20.5607 20.5597C20.2794 20.841 19.8978 20.999 19.5 20.999H4.5C4.10218 20.999 3.72064 20.841 3.43934 20.5597C3.15804 20.2784 3 19.8968 3 19.499V14.249C3 14.0501 3.07902 13.8593 3.21967 13.7187C3.36032 13.578 3.55109 13.499 3.75 13.499C3.94891 13.499 4.13968 13.578 4.28033 13.7187C4.42098 13.8593 4.5 14.0501 4.5 14.249V19.499H19.5V14.249C19.5 14.0501 19.579 13.8593 19.7197 13.7187C19.8603 13.578 20.0511 13.499 20.25 13.499C20.4489 13.499 20.6397 13.578 20.7803 13.7187C20.921 13.8593 21 14.0501 21 14.249ZM11.4694 14.7796C11.539 14.8494 11.6217 14.9047 11.7128 14.9424C11.8038 14.9802 11.9014 14.9996 12 14.9996C12.0986 14.9996 12.1962 14.9802 12.2872 14.9424C12.3783 14.9047 12.461 14.8494 12.5306 14.7796L16.2806 11.0296C16.3503 10.96 16.4056 10.8772 16.4433 10.7862C16.481 10.6952 16.5004 10.5976 16.5004 10.499C16.5004 10.4005 16.481 10.3029 16.4433 10.2119C16.4056 10.1208 16.3503 10.0381 16.2806 9.9684C16.2109 9.89872 16.1282 9.84344 16.0372 9.80573C15.9461 9.76802 15.8485 9.74861 15.75 9.74861C15.6515 9.74861 15.5539 9.76802 15.4628 9.80573C15.3718 9.84344 15.2891 9.89872 15.2194 9.9684L12.75 12.4387V3.74902C12.75 3.55011 12.671 3.35935 12.5303 3.21869C12.3897 3.07804 12.1989 2.99902 12 2.99902C11.8011 2.99902 11.6103 3.07804 11.4697 3.21869C11.329 3.35935 11.25 3.55011 11.25 3.74902V12.4387L8.78063 9.9684C8.63989 9.82767 8.44902 9.74861 8.25 9.74861C8.05098 9.74861 7.86011 9.82767 7.71937 9.9684C7.57864 10.1091 7.49958 10.3 7.49958 10.499C7.49958 10.698 7.57864 10.8889 7.71937 11.0296L11.4694 14.7796Z"
+                                                    fill="#212121" />
+                                            </svg>
+                                            Download App
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="row d-flex align-items-center justify-content-center" style="height:100vh">
+            <div class="col-sm-12 col-md-7">
+                <div class="row" style="height:75vh;">
+                    <div class="col-sm-5 bg-primary p-3">
+                        <span class="text-light fs-2">Login</span><br><br>
+                        <span class="text-light py-5">Get access to your Orders, <br>Wishlist and Recommendations</span>
+
+                        <img class="px-4 py-5" src="images/login.png" alt="">
+                    </div>
+                    <div class="col-sm-7 bg-white p-3" id="login">
+                        <form action="#">
+                            <div class="form-floating bg-transparent mt-3 mb-4">
+                                <input type="text" class="form-control bg-transparent rounded-0" id="floatingInput"
+                                    placeholder="Enter Email/Mobile Number">
+                                <label for="floatingInput">Enter Email/Mobile Number</label>
+                            </div>
+                            <div class="terms mb-4" style="font-size: 0.8rem;">
+                                By continuing, you agree to Flipkart's <a href="#" style="text-decoration: none;">Terms
+                                    of Use</a> and <a href="#" style="text-decoration: none;">Privacy Policy</a>.
+                            </div>
+                            <input class="btn btn-primary form-control" value="Request OTP">
+                        </form>
+                        <div class="d-flex align-items-end justify-content-center" style="height:35vh;">
+                            <a href="#" style="text-decoration: none; font-weight: 600;">New to Flipkart? Create an account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer" class="row bg-dark py-4">
+            <div class="col-sm-12 col-md-6 col-xl-2">
+                <h5 class="h5 ps-4">ABOUT</h5>
+                <ul>
+                    <a href="#">
+                        <li>Contact Us</li>
+                    </a>
+                    <a href="#">
+                        <li>About Us</li>
+                    </a>
+                    <a href="#">
+                        <li>Careers</li>
+                    </a>
+                    <a href="#">
+                        <li>Flipkart Stories</li>
+                    </a>
+                    <a href="#">
+                        <li>Press</li>
+                    </a>
+                    <a href="#">
+                        <li>Flipkart Wholeshale</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-2">
+                <h5 class="h5 ps-4">HELP</h5>
+                <ul>
+                    <a href="#">
+                        <li>Payments</li>
+                    </a>
+                    <a href="#">
+                        <li>Shipping</li>
+                    </a>
+                    <a href="#">
+                        <li>Cancellation & Returns</li>
+                    </a>
+                    <a href="#">
+                        <li>FAQ</li>
+                    </a>
+                    <a href="#">
+                        <li>Report Infringement</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-2">
+                <h5 class="h5 ps-4">CONSUMER POLICY</h5>
+                <ul>
+                    <a href="#">
+                        <li>Cancellation & Returns</li>
+                    </a>
+                    <a href="#">
+                        <li>Terms Of Use</li>
+                    </a>
+                    <a href="#">
+                        <li>Security</li>
+                    </a>
+                    <a href="#">
+                        <li>Privacy</li>
+                    </a>
+                    <a href="#">
+                        <li>Sitemap</li>
+                    </a>
+                    <a href="#">
+                        <li>Grievance Redressal</li>
+                    </a>
+                    <a href="#">
+                        <li>ERP Compliance</li>
+                    </a>
+                    <a href="#">
+                        <li></li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-3">
+                <h5 class="h5">Mail Us:</h5>
+                Flipkart Internet Private Limited,
+                Buildings Alyssa, Begonia &amp;
+                Clove Embassy Tech Village,
+                Outer Ring Road, Devarabeesanahalli Village,
+                Bengaluru, 560103,
+                Karnataka, Indi
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-xl-3">
+                <h5 class="h5">Registered Office Address</h5>
+                Flipkart Internet Private Limited,
+                Buildings Alyssa, Begonia &amp;
+                Clove Embassy Tech Village,
+                Outer Ring Road, Devarabeesanahalli Village,
+                Bengaluru, 560103,
+                Karnataka, India
+                CIN : U51109KA2012PTC066107
+
+                Telephone: <a href="tel:044-45614700">044-45614700</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
